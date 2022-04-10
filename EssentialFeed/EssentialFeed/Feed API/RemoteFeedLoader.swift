@@ -7,7 +7,7 @@
 
 import Foundation
 
-public typealias RemoteFeedLoaderResult = LoadFeedResult<RemoteFeedLoader.Error>
+public typealias RemoteFeedLoaderResult = LoadFeedResult
 
 public final class RemoteFeedLoader: FeedLoader {
     
@@ -32,7 +32,7 @@ public final class RemoteFeedLoader: FeedLoader {
             case let .success((data, response)):
                 completion(FeedItemsMapper.map(data, from: response))
             case .failure:
-                completion(.failure(.connectivity))
+                completion(.failure(RemoteFeedLoader.Error.connectivity))
             }
         }
     }
