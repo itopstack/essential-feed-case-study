@@ -7,7 +7,7 @@
 
 import Foundation
 
-public typealias RemoteFeedLoaderResult = Result<[FeedItem], RemoteFeedLoader.Error>
+public typealias RemoteFeedLoaderResult = LoadFeedResult<RemoteFeedLoader.Error>
 
 public final class RemoteFeedLoader {
     
