@@ -127,6 +127,7 @@
 		B43C123627FD97FA00ED9929 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				B47A1DC728047B6D00DA96A5 /* Helpers */,
 				B47FE46A28097AD700AFFBB0 /* Feed Cache */,
 				B47A1DC42801EAA200DA96A5 /* Feed API */,
 			);
@@ -156,7 +157,6 @@
 		B47A1DC42801EAA200DA96A5 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
-				B47A1DC728047B6D00DA96A5 /* Helpers */,
 				B43C124927FDF78900ED9929 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				B47A1DC5280313DA00DA96A5 /* URLSessionHTTPClientTests.swift */,
 			);
