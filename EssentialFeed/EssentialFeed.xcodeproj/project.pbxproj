@@ -11,6 +11,8 @@
 		B41C79C62805647C00DE4AAB /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C79C52805647C00DE4AAB /* EssentialFeedAPIEndToEndTests.swift */; };
 		B41C79C72805647C00DE4AAB /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43C122A27FD97FA00ED9929 /* EssentialFeed.framework */; };
 		B41C79CD28056DE600DE4AAB /* XCTestCase+MemoryLeaksTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A1DC828047B8D00DA96A5 /* XCTestCase+MemoryLeaksTracking.swift */; };
+		B42B8DB728104C1A00A30611 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B8DB628104C1A00A30611 /* FeedCacheTestHelpers.swift */; };
+		B42B8DB928104D5000A30611 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B8DB828104D5000A30611 /* SharedTestHelpers.swift */; };
 		B43C123327FD97FA00ED9929 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43C122A27FD97FA00ED9929 /* EssentialFeed.framework */; };
 		B43C123927FD97FA00ED9929 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = B43C122D27FD97FA00ED9929 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B43C124527FD993A00ED9929 /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C124427FD993A00ED9929 /* FeedImage.swift */; };
@@ -52,6 +54,8 @@
 		B41C79BD280496BF00DE4AAB /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		B41C79C32805647C00DE4AAB /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41C79C52805647C00DE4AAB /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		B42B8DB628104C1A00A30611 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
+		B42B8DB828104D5000A30611 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		B43C122A27FD97FA00ED9929 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43C122D27FD97FA00ED9929 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		B43C123227FD97FA00ED9929 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				B47A1DC828047B8D00DA96A5 /* XCTestCase+MemoryLeaksTracking.swift */,
+				B42B8DB828104D5000A30611 /* SharedTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D5DA6D280DA0400008EA7E /* FeedStoreSpy.swift */,
+				B42B8DB628104C1A00A30611 /* FeedCacheTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -381,10 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42B8DB728104C1A00A30611 /* FeedCacheTestHelpers.swift in Sources */,
 				B4D5F2B8281044B00008EA7E /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				B43C124A27FDF78900ED9929 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				B47A1DC928047B8D00DA96A5 /* XCTestCase+MemoryLeaksTracking.swift in Sources */,
 				B4D5DA6E280DA0400008EA7E /* FeedStoreSpy.swift in Sources */,
+				B42B8DB928104D5000A30611 /* SharedTestHelpers.swift in Sources */,
 				B47FE46C28097AFC00AFFBB0 /* CacheFeedUseCaseTests.swift in Sources */,
 				B48853FC280D9E7B00D38338 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				B47A1DC6280313DA00DA96A5 /* URLSessionHTTPClientTests.swift in Sources */,
