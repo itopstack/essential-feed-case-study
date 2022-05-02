@@ -64,22 +64,22 @@ public final class CodableFeedStore: FeedStore {
             let cache = Cache(feed: feed.map(CodablaFeedImage.init), timestamp: timestamp)
             let encoded = try encoder.encode(cache)
             try encoded.write(to: storeURL)
-            completion(nil)
+            completion(.success(()))
         } catch {
-            completion(error)
+            completion(.failure(error))
         }
     }
     
     public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
         guard FileManager.default.fileExists(atPath: storeURL.path) else {
-            return completion(nil)
+            return completion(.success(()))
         }
         
         do {
             try FileManager.default.removeItem(at: storeURL)
-            completion(nil)
+            completion(.success(()))
         } catch {
-            completion(error)
+            completion(.failure(error))
         }
     }
 }
