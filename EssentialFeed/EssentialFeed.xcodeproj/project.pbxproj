@@ -374,6 +374,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		B47703BA283298AE0007FD19 /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				B47703AF283296780007FD19 /* Controllers */,
+				B47703B0283296820007FD19 /* Views */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
 		B47A1DC42801EAA200DA96A5 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,8 +438,7 @@
 		B497BE5528262C9D00BF9BD5 /* EsstentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				B47703AF283296780007FD19 /* Controllers */,
-				B47703B0283296820007FD19 /* Views */,
+				B47703BA283298AE0007FD19 /* Feed UI */,
 			);
 			path = EsstentialFeediOS;
 			sourceTree = "<group>";
