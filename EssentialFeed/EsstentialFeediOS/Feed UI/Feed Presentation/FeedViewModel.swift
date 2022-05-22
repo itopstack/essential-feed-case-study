@@ -5,7 +5,6 @@
 //  Created by Kittisak Phetrungnapha on 19/5/2565 BE.
 //
 
-import Foundation
 import EssentialFeed
 
 final class FeedViewModel {
